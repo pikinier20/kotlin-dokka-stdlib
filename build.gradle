@@ -58,7 +58,7 @@ task cleanupSources(type: Delete) {
 def outputDir = "$buildDir/dokka"
 
 dependencies {
-    dokkaPlugin("org.virtuslab:inkuire-plugin:1.0-SNAPSHOT")
+    dokkaPlugin("org.virtuslab:inkuire-db-generator:1.0-SNAPSHOT")
 }
 
 task callDokka() {
