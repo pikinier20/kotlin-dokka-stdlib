@@ -58,12 +58,18 @@ task cleanupSources(type: Delete) {
 def outputDir = "$buildDir/dokka"
 
 dependencies {
-    dokkaPlugin("org.virtuslab:inkuire-db-generator:1.0-SNAPSHOT")
+    dokkaPlugin("org.virtuslab:inkuire-html-extension:1.0-SNAPSHOT")
 }
 
 task callDokka() {
     delete(outputDir)
     dependsOn = [extractAll, cleanupSources]
+}
+
+task copyConfig(type: Copy) {
+    from(rootDir.absolutePath)
+    into(rootDir.absolutePath + "/build/dokka/kotlin-stdlib/scripts")
+    include("inkuire-config.json")
 }
 
 gradle.projectsEvaluated {
@@ -432,6 +438,7 @@ gradle.projectsEvaluated {
 
     callDokka.finalizedBy dokkaStdlib
     dokkaStdlib.finalizedBy dokkaKotlinTest
+    dokkaKotlinTest.finalizedBy copyConfig
 }
 
 tasks {

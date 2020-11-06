@@ -1,0 +1,14 @@
+{
+  "address": {"address": "0.0.0.0"},
+  "port": { "port": 8080 },
+  "dbPaths": [
+    {"path" : "../kotlin-stdlib-java-common/kotlin-stdlib.inkuire.fdb"},
+    {"path" : "../kotlin-stdlib-jdk8/kotlin-stdlib.inkuire.fdb"},
+    {"path" : "../kotlin-stdlib-common/kotlin-stdlib.inkuire.fdb"}
+  ],
+  "ancestryGraphPaths": [
+    {"path" : "../kotlin-stdlib-java-common/kotlin-stdlib.inkuire.adb"},
+    {"path" : "../kotlin-stdlib-jdk8/kotlin-stdlib.inkuire.adb"},
+    {"path" : "../kotlin-stdlib-common/kotlin-stdlib.inkuire.adb"}
+  ]
+}
