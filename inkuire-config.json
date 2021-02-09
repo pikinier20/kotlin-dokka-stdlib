@@ -2,13 +2,13 @@
   "address": {"address": "0.0.0.0"},
   "port": { "port": 8080 },
   "dbPaths": [
-    {"path" : "inkuiredb/kotlin-stdlib-java-common/kotlin-stdlib.inkuire.fdb"},
-    {"path" : "inkuiredb/kotlin-stdlib-jdk8/kotlin-stdlib.inkuire.fdb"},
-    {"path" : "inkuiredb/kotlin-stdlib-common/kotlin-stdlib.inkuire.fdb"}
+    {"path" : "inkuiredb/kotlin-stdlib-java-common/kotlin-stdlib.fdb.inkuire"},
+    {"path" : "inkuiredb/kotlin-stdlib-jdk8/kotlin-stdlib.fdb.inkuire"},
+    {"path" : "inkuiredb/kotlin-stdlib-common/kotlin-stdlib.fdb.inkuire"}
   ],
   "ancestryGraphPaths": [
-    {"path" : "inkuiredb/kotlin-stdlib-java-common/kotlin-stdlib.inkuire.adb"},
-    {"path" : "inkuiredb/kotlin-stdlib-jdk8/kotlin-stdlib.inkuire.adb"},
-    {"path" : "inkuiredb/kotlin-stdlib-common/kotlin-stdlib.inkuire.adb"}
+    {"path" : "inkuiredb/kotlin-stdlib-java-common/kotlin-stdlib.adb.inkuire"},
+    {"path" : "inkuiredb/kotlin-stdlib-jdk8/kotlin-stdlib.adb.inkuire"},
+    {"path" : "inkuiredb/kotlin-stdlib-common/kotlin-stdlib.adb.inkuire"}
   ]
 }
